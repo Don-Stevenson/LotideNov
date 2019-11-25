@@ -1,16 +1,18 @@
+// Function that compares two values and asserts whether they are the same or not
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`😊 😊 😊 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
-    console.log(`😢 😢 😢 Assertion Failed: + ${actual} !== ${expected}`);
+    console.log(`🟥🟥🟥 Assertion Failed: + ${actual} !== ${expected}`);
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+// Head function: Returns the first value from an array;
 
-// If the values match, it should print (console.log) the following: Assertion Passed: [actual] === [expected] (but with the values filled in)
-// Otherwise it should print (console.log) the following: Assertion Failed: [actual] !== [expected] (but with the values filled in)
+const head = (input) => {
+  return input[0];
+};
 
-const head = function (1)
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
