@@ -26,7 +26,7 @@ const tail = (array) => {
 // assertEqual(words.length, 3); // original array should still have 3 elements!
 
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+const result = tail(["Hello", "Lighthouse!", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 
 
