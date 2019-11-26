@@ -8,6 +8,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+// function that compares if two arrays are the same
 const eqArrays = (arrOne, arrTwo) => {
   if (arrOne.length !== arrTwo.length) {
     return false;
