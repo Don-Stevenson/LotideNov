@@ -13,7 +13,7 @@ const eqArrays = (arrOne, arrTwo) => {
 //Function that asserts if two arrays are equal to one another
 const assertArraysEqual = (arrOne, arrTwo) =>{
   if (eqArrays(arrOne, arrTwo)){
-    console.log (`✅✅✅ Assertion Passed: + ${arrOne} + === ${arrTwo} ✅✅✅`);
+    console.log (`✅✅✅ Assertion Passed: ${arrOne} === ${arrTwo} ✅✅✅`);
   } else {
    console.log (`🟥🟥🟥 Assertion Failed: ${arrOne} !== ${arrTwo} 🟥🟥🟥`);
   }
@@ -33,5 +33,5 @@ const middle = (array) => {
   }
 }
 
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+assertArraysEqual(middle([1, 2, 3]), [2]) // => [2]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]) // => [3, 4]
