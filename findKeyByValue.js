@@ -14,6 +14,8 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
+// function that returns the key when the value has been given
+
 const findKeyByValue = (object, value) => {
   for (let key in object) {
     if (object[key] === value) {
@@ -22,7 +24,6 @@ const findKeyByValue = (object, value) => {
   }
   return undefined;
 };
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
