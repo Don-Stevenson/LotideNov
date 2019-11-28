@@ -19,7 +19,7 @@ const assertArraysEqual = (arrOne, arrTwo) => {
   }
 };
 
-
+// a function that uses a callback to return a new array from a parent array until a certain condition is met
 
 const takeUntil = function(array, callback) {
   const results = [];
